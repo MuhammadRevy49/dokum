@@ -1,28 +1,33 @@
+"use client";
+
+import { motion } from "framer-motion";
 import AnimatedBorderButton from "./AnimatedBorderButton";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="bg-black relative min-h-screen flex items-center overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
           {/* LEFT : IMAGE / MOCKUP */}
           <div className="relative flex justify-center md:justify-start">
-            
-            {/* spotlight */}
-            <div className="absolute inset-0 pointer-events-none">
-              <div className="spotlight" />
-            </div>
 
-            <div className="relative">
+            <div className="relative select-none">
+              <motion.div
+                animate={{ y: [0, -12, 0] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="relative"
+              >
               <img
-                src="/mockup-camera.png"
+                src="/images/hero.png"
                 alt="Document Camera App"
-                className="w-full max-w-md rounded-2xl shadow-2xl border border-neutral-900 relative z-10"
+                className="w-full max-w-md relative z-10"
               />
-
-              {/* subtle image glow (keep) */}
-              <div className="absolute -inset-6 bg-white/5 blur-3xl rounded-full -z-10" />
+              </motion.div>
             </div>
           </div>
 
@@ -32,7 +37,7 @@ export default function Hero() {
               Dokum <br />
 
               <span className="relative inline-block mt-2">
-                <span className="text-gray-400 relative z-10">
+                <span className="text-zinc-500 relative z-10">
                   Solusi Dokumentasi
                 </span>
 
@@ -56,8 +61,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* global background glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.02),transparent_60%)]" />
     </section>
   );
 }

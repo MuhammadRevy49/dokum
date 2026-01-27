@@ -81,30 +81,3 @@ body {
 .animate-border-spin {
   animation: borderSpin 6s linear infinite;
 }
-
-
-/* Cahaya Senter */
-.spotlight {
-  position: absolute;
-  inset: -20%;
-  background: radial-gradient(
-    circle at 40% 50%,
-    rgba(255, 255, 255, 0.12),
-    rgba(255, 255, 255, 0.06) 30%,
-    transparent 65%
-  );
-  filter: blur(40px);
-  animation: spotlightMove 12s ease-in-out infinite;
-}
-
-@keyframes spotlightMove {
-  0% {
-    transform: translate(-10px, -10px);
-  }
-  50% {
-    transform: translate(10px, 10px);
-  }
-  100% {
-    transform: translate(-10px, -10px);
-  }
-}

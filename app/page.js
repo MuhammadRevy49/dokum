@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import HowItWorks from "./components/Howitworks";
 import CTA from "./components/Cta";
 import Footer from "./components/Footer";
+import Solutions from "./components/Solutions";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Features />
+      <Solutions />
       <HowItWorks />
       <CTA />
       <Footer />
