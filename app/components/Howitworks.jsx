@@ -1,3 +1,5 @@
+const steps = ["Ambil Foto & Video", "Otomatis Tersusun", "Bagikan dengan Mudah"];
+
 export default function HowItWorks() {
   return (
     <section className="py-24">
@@ -5,7 +7,7 @@ export default function HowItWorks() {
         <h2 className="text-3xl font-semibold">How It Works</h2>
 
         <div className="mt-12 grid md:grid-cols-3 gap-10 text-left">
-          {["Capture", "Process", "Export"].map((step, i) => (
+          {steps.map((step, i) => (
             <div key={i}>
               <span className="text-black px-4 py-1 rounded-full bg-white text-sm">
                 STEP {i + 1}
