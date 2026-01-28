@@ -53,9 +53,11 @@ export default function Hero() {
             </p>
 
             <div className="mt-10">
+              <a href="#about">
               <AnimatedBorderButton>
                 Pelajari Lebih Lanjut
               </AnimatedBorderButton>
+              </a>
             </div>
           </div>
         </div>
