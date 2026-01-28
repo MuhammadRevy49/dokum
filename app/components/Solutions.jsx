@@ -1,3 +1,5 @@
+"use client";
+
 const features = [
   {
     title: "Dokumentasi Otomatis Terorganisir",
@@ -8,27 +10,46 @@ const features = [
     desc: "Dokumentasi bisa diakses dan dibagikan ke rekan dalam satu alur.",
   },
   {
-    title: "Siap Dibagikan Ke Cloud",
+    title: "Siap Dibagikan ke Cloud",
     desc: "Dokumentasi dapat diekspor ke Google Drive tanpa proses manual.",
   },
 ];
 
 export default function Solutions() {
   return (
-    <section className="py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-semibold text-center">
-          Satu Alur untuk Dokumentasi yang Lebih Rapi
+    <section id="features" className="py-28 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-3xl font-semibold text-black">
+          Dokumentasi Lebih Rapi
         </h2>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-8">
+        <p className="mt-4 text-neutral-600 max-w-xl">
+          Dirancang untuk alur kerja dokumentasi yang nyata, bukan sekadar penyimpanan file.
+        </p>
+
+        <div className="mt-16 space-y-6">
           {features.map((f, i) => (
             <div
               key={i}
-              className="p-6 rounded-2xl bg-neutral-900 border border-neutral-900 hover:border-gray-400 transition"
+              className="group flex items-start justify-between gap-6
+                         rounded-2xl border border-neutral-200
+                         px-6 py-5 transition
+                         hover:border-neutral-400"
             >
-              <h3 className="text-lg font-medium">{f.title}</h3>
-              <p className="mt-3 text-neutral-400 text-sm">{f.desc}</p>
+              {/* LEFT */}
+              <div className="flex gap-4">
+                {/* indicator */}
+                <div className="w-1 rounded-full bg-black/80" />
+
+                <div>
+                  <h3 className="text-base font-medium text-black">
+                    {f.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-neutral-600 max-w-xl">
+                    {f.desc}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

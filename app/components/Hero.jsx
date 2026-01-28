@@ -5,7 +5,7 @@ import AnimatedBorderButton from "./AnimatedBorderButton";
 
 export default function Hero() {
   return (
-    <section className="bg-black relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="bg-black relative min-h-screen flex items-center overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
