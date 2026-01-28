@@ -1,17 +1,29 @@
+import AnimatedBorderButton from "./AnimatedBorderButton";
+
 export default function CTA() {
   return (
-    <section className="py-24 border-t border-neutral-900">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-semibold">
-          Ready to Scan Smarter?
+    <section id="cta" className="py-28 bg-[#0d0d0d]">
+      <div className="max-w-5xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold">
+          Bantu Kami Membangun Dokum
         </h2>
-        <p className="mt-4 text-neutral-400">
-          Start using our camera app and experience professional document capture.
+
+        <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
+          Kami sedang mengembangkan solusi dokumentasi yang lebih rapi dan efisien.
+          Masukan Anda akan sangat membantu arah pengembangan kami.
         </p>
 
-        <button className="mt-8 px-8 py-4 rounded-full bg-white text-black hover:cursor-pointer hover:bg-gray-400 transition">
-          Mulai Sekarang
-        </button>
+        <div className="mt-10 flex justify-center">
+          <a
+            href="https://forms.gle/5RaHRD8ViXCSiz847"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              Isi Survei Singkat
+            </AnimatedBorderButton>
+          </a>
+        </div>
       </div>
     </section>
   );
