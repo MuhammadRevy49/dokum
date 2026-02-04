@@ -2,7 +2,7 @@ import AnimatedBorderButton from "./AnimatedBorderButton";
 
 export default function CTA() {
   return (
-    <section id="cta" className="py-28 bg-[#0d0d0d]">
+    <section id="cta" className="py-28 bg-[#111]">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold">
           Bantu Kami Membangun Dokum
