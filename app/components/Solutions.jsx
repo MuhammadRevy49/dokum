@@ -2,8 +2,8 @@
 
 const features = [
   {
-    title: "Dokumentasi Otomatis Terorganisir",
-    desc: "Foto dan video langsung tersusun rapi berdasarkan kategori.",
+    title: "Dokumentasi Rapi Terorganisir",
+    desc: "Foto dan video tersusun rapi berdasarkan kategori.",
   },
   {
     title: "Kolaborasi Lebih Mudah",
@@ -11,19 +11,19 @@ const features = [
   },
   {
     title: "Siap Dibagikan ke Cloud",
-    desc: "Dokumentasi dapat diekspor ke Google Drive tanpa proses manual.",
+    desc: "Dokumentasi dapat diekspor ke cloud tanpa proses manual.",
   },
 ];
 
 export default function Solutions() {
   return (
-    <section id="features" className="py-28 bg-white">
+    <section id="features" className="py-28 bg-black">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-semibold text-black">
+        <h2 className="text-3xl font-semibold text-white">
           Dokumentasi Lebih Rapi
         </h2>
 
-        <p className="mt-4 text-neutral-600 max-w-xl">
+        <p className="mt-4 text-neutral-400 max-w-xl">
           Dirancang untuk alur kerja dokumentasi yang nyata, bukan sekadar penyimpanan file.
         </p>
 
@@ -32,7 +32,7 @@ export default function Solutions() {
             <div
               key={i}
               className="group flex items-start justify-between gap-6
-                         rounded-2xl border border-neutral-200
+                         rounded-2xl border border-neutral-800
                          px-6 py-5 transition
                          hover:border-neutral-400"
             >
@@ -42,10 +42,10 @@ export default function Solutions() {
                 <div className="w-1 rounded-full bg-black/80" />
 
                 <div>
-                  <h3 className="text-base font-medium text-black">
+                  <h3 className="text-base font-medium text-white">
                     {f.title}
                   </h3>
-                  <p className="mt-1 text-sm text-neutral-600 max-w-xl">
+                  <p className="mt-1 text-sm text-neutral-400 max-w-xl">
                     {f.desc}
                   </p>
                 </div>

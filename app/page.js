@@ -5,6 +5,7 @@ import HowItWorks from "./components/Howitworks";
 import CTA from "./components/Cta";
 import Footer from "./components/Footer";
 import Solutions from "./components/Solutions";
+import Mockup from "./components/Mockup";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Features />
       <Solutions />
       <HowItWorks />
+      <Mockup />
       <CTA />
       <Footer />
     </main>
